@@ -1,0 +1,106 @@
+W04 Team Activity: Foundation Programs Design
+
+============================================================
+PROGRAM 1 – YouTube Videos (Abstraction)
+============================================================
+
+Class Diagram:
+
++---------------------------+
+|           Video           |
++---------------------------+
+| - title : string          |
+| - author : string         |
+| - lengthSeconds : int     |
+| - comments : List<Comment>|
++---------------------------+
+| + GetTitle() : string     |
+| + GetAuthor() : string    |
+| + GetLength() : int       |
+| + AddComment(c: Comment)  |
+| + GetCommentCount() : int |
+| + GetComments() : List    |
++---------------------------+
+
++---------------------------+
+|          Comment          |
++---------------------------+
+| - author : string         |
+| - text : string           |
++---------------------------+
+| + GetAuthor() : string    |
+| + GetText() : string      |
++---------------------------+
+
+Program Description:
+
+- Video class stores title, author, length, and comments.
+- Comment class stores commenter name and text.
+- Program creates 3–4 videos with 3–4 comments each.
+- Loops through videos to display info + comments.
+- Demonstrates Abstraction by hiding internal data.
+
+============================================================
+PROGRAM 2 – Online Ordering (Encapsulation)
+============================================================
+
+Class Diagram:
+
++---------------------------+
+|          Product          |
++---------------------------+
+| - name : string           |
+| - productId : string      |
+| - price : double          |
+| - quantity : int          |
++---------------------------+
+| + GetTotalCost() : double |
+| + GetName() : string      |
+| + GetProductId() : string |
++---------------------------+
+
++---------------------------+
+|          Address          |
++---------------------------+
+| - street : string         |
+| - city : string           |
+| - stateProvince : string  |
+| - country : string        |
++---------------------------+
+| + IsInUSA() : bool        |
+| + GetFullAddress() : str  |
++---------------------------+
+
++---------------------------+
+|         Customer          |
++---------------------------+
+| - name : string           |
+| - address : Address       |
++---------------------------+
+| + LivesInUSA() : bool     |
+| + GetName() : string      |
+| + GetAddress() : Address  |
++---------------------------+
+
++---------------------------+
+|           Order           |
++---------------------------+
+| - products : List<Product>|
+| - customer : Customer     |
++---------------------------+
+| + AddProduct(p: Product)  |
+| + CalculateTotalCost()    |
+| + GetPackingLabel()       |
+| + GetShippingLabel()      |
++---------------------------+
+
+Program Description:
+
+- Address stores full address and checks if USA.
+- Customer stores name and Address.
+- Product stores info and calculates total cost.
+- Order stores products and customer, prints labels, calculates total with shipping ($5 domestic, $35 international).
+
+============================================================
+End of Design
+============================================================
