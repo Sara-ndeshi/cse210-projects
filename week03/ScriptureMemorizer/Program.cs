@@ -2,7 +2,9 @@
 Assignment: W03 Scripture Memorizer Program
 
 Creativity / Exceeding Requirements:
-I added a library of multiple scriptures so the program randomly selects a passage each run. Words are hidden progressively using the Hide() method 
+I added a library of multiple scriptures 
+so the program randomly selects a passage each run. 
+Words are hidden progressively using the Hide() method 
 without re-hiding, and the program displays the number of hidden words to track memorization.
 */
 
